@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Fyn Restaurant</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"><style>body { background-color: #f7f9ff; } .accent { background-color: #1d4ed8; color: #ffffff; } .card { border: none; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); } .card:hover { box-shadow: 0 0 20px rgba(0,0,0,0.2); } .hero { background-image: linear-gradient(to bottom, #1d4ed8, #f7f9ff); padding: 100px 0; text-align: center; } .hero h1 { color: #ffffff; } .service-card { margin: 20px; } .about { padding: 50px; } .contact { padding: 50px; } .footer { background-color: #1d4ed8; color: #ffffff; padding: 20px; text-align: center; }</style></head><body><div class="hero"><h1>Welcome to Fyn Restaurant</h1><p>Experience the best of Cape Town's culinary scene</p><button type="button" class="btn accent">Book a Table</button></div><div class="container"><div class="row"><div class="col-md-3 service-card"><div class="card"><div class="card-body"><h5 class="card-title">Fine Dining</h5><p class="card-text">Savor our expertly crafted dishes</p><button type="button" class="btn accent">Learn More</button></div></div></div><div class="col-md-3 service-card"><div class="card"><div class="card-body"><h5 class="card-title">Wine Pairing</h5><p class="card-text">Discover the perfect pairing for your meal</p><button type="button" class="btn accent">Explore</button></div></div></div><div class="col-md-3 service-card"><div class="card"><div class="card-body"><h5 class="card-title">Private Events</h5><p class="card-text">Host your special occasion with us</p><button type="button" class="btn accent">Inquire</button></div></div></div><div class="col-md-3 service-card"><div class="card"><div class="card-body"><h5 class="card-title">Catering</h5><p class="card-text">Let us bring the flavor to you</p><button type="button" class="btn accent">Get a Quote</button></div></div></div></div></div><div class="about"><h2>About Us</h2><p>Fyn Restaurant is dedicated to providing an exceptional dining experience in the heart of Cape Town</p></div><div class="contact"><h2>Get in Touch</h2><p>Phone: +27 21 286 2733 | Email: <a href="mailto:info@fynrestaurant.com">info@fynrestaurant.com</a> | Website: <a href="http://fynrestaurant.com/">http://fynrestaurant.com/</a></p></div><div class="footer"><p>&copy; 2024 Fyn Restaurant</p></div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    if (window.gsap) {
+      gsap.from("header, .hero, main section, .card, .service-card", {
+        y: 24,
+        opacity: 0,
+        duration: 0.75,
+        ease: "power2.out",
+        stagger: 0.08
+      });
+    }
+  });
+</script>
+</body></html>
